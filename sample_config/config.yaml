@@ -1,0 +1,9 @@
+aws:
+#  IF YOU ARE USING SHARED CREDENTIALS (~/.aws/credentials):
+#  ---------------------------------------------------------
+  credentials_type: shared
+  profile_name: default
+
+amigrind:
+# Without this, you'll need to pass the --environment argument all over the place.
+  default_environment: development

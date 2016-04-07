@@ -1,0 +1,72 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - "data/db/migrations/*"
+    - "**/bin/*"
+    - "**/*.gemspec"
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/Capfile'
+    - '**/Guardfile'
+    - '**/Podfile'
+    - '**/Thorfile'
+    - '**/Vagrantfile'
+    - '**/Berksfile'
+    - '**/Cheffile'
+    - '**/Vagabondfile'
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/ClassLength:
+  Max: 300
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 60
+
+Metrics/PerceivedComplexity:
+  Max: 15
+
+Style/AlignParameters:
+  Enabled: false
+
+Style/DefWithParentheses:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyLines:
+  Enabled: false
+
+Style/MethodCallParentheses:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  Enabled: false
+
+Style/SelfAssignment:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
+
+Style/SpaceBeforeFirstArg:
+  Enabled: false
+
+Style/SpaceInsideBrackets:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false

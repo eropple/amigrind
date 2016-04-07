@@ -1,0 +1,15 @@
+amigrind:
+  channels:
+    prerelease: {}
+    live: {}
+
+aws:
+  region: us-west-2
+  copy_regions: []
+  vpc: vpc-AABBCCDD
+  subnets:
+    - subnet-AABBCCDD
+  ssh_keypair_name: ~
+
+properties:
+  a: 5

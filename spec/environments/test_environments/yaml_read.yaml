@@ -1,0 +1,16 @@
+amigrind:
+  channels:
+    prerelease: {}
+    live: {}
+
+aws:
+  region: us-west-2
+  copy_regions:
+    - us-east-1
+  vpc: vpc-AABBCCDD
+  subnets:
+    - subnet-AABBCCDD
+  ssh_keypair_name: moop
+
+properties:
+  a: 5
