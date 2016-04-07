@@ -14,8 +14,8 @@ Gem::Specification.new do |spec|
   spec.license       = "Apache 2.0"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   = [ 'amigrind' ]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.11"
@@ -32,5 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'ptools', '~> 1.3', '>= 1.3.3'
   spec.add_runtime_dependency 'settingslogic', '~> 2.0.9'
 
-  spec.add_runtime_dependency 'amigrind-core'
+  spec.add_runtime_dependency 'amigrind-core', '~> 0.1.0'
 end
