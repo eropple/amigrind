@@ -78,7 +78,8 @@ module Amigrind
       end
 
       def provisioner(name, provisioner_class, weight: nil, &block)
-        weight ||= (@blueprint.provisioners.max_by(&:weight) || 0) + 1
+        highest_provisioner = @blueprint.provisioners.max_by(&:weight)
+        weight ||= (highest_provisioner.nil? ? 0 : highest_provisioner.weight) + 1
 
         raise "'name' must be a String or Symbol." \
           unless name.is_a?(String) || name.is_a?(Symbol)
