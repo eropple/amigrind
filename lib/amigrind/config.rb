@@ -1,4 +1,5 @@
 require 'settingslogic'
+require 'fileutils'
 require 'os'
 
 module Amigrind
