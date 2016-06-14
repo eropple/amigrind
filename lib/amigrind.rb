@@ -22,7 +22,7 @@ require 'active_support/core_ext/numeric/time'
 module Amigrind
 end
 
-Dir["#{__dir__}/**/*.rb"].reject { |f| f.include?('/cli') }.each { |f| require_relative f }
+Dir["#{__dir__}/**/*.rb"].reject { |f| f.include?('/cli') }.sort.each { |f| require_relative f }
 
 # Post-includes
 module Amigrind

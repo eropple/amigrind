@@ -1,3 +1,5 @@
+require 'amigrind/repo'
+
 module Amigrind
   module CLI
     REPO.add_command(

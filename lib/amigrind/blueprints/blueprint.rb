@@ -1,4 +1,5 @@
 require 'amigrind/blueprints/provisioner'
+require 'amigrind/blueprints/aws_config'
 
 module Amigrind
   module Blueprints

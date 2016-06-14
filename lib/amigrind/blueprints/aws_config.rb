@@ -1,3 +1,5 @@
+require 'amigrind/environments/channel'
+
 module Amigrind
   module Blueprints
     class AWSConfig

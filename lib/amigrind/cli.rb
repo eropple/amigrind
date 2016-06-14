@@ -1,7 +1,7 @@
 require 'amigrind'
 require 'cri'
 
-Dir["#{__dir__}/cli/**/*.rb"].each { |f| require_relative f }
+Dir["#{__dir__}/cli/**/*.rb"].sort.each { |f| require_relative f }
 
 module Amigrind
   module CLI

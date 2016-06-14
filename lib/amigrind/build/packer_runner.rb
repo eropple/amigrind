@@ -1,3 +1,5 @@
+require 'amigrind/blueprints/blueprint'
+
 module Amigrind
   module Build
     class PackerRunner
